@@ -42,3 +42,8 @@ __Digital Wallet__ is run using the __run.sh__ Bash script:
 The results will be available in the __paymo_output__ directory
 
 ## tests
+
+Tests are in the __tests__ directory. To run them:
+
+    cd tests
+    ./run_test.sh

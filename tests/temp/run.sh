@@ -13,6 +13,9 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     if ! type python3 > /dev/null; then
         apt-get install -y python3
     fi
+    if ! type pip3 > /dev/null; then
+        apt-get install -y python3-pip
+    fi
 fi
 
 #run digital wallet
