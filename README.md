@@ -32,3 +32,13 @@ I also implemented some functions in the `Graph` class that mimics functionality
 ##running digital wallet
 
 I use a python dict to implement the adjacency list where the key is a `Node` and the value is a `Set` of nodes. So the neighbors for a node can be access in time proportional to the degree of the node or __O(n)__ where __n__ is # of neighbors. The space complexity of the adjacency list is also __O(n)__. My implementation of the breadth first search limits how many degrees from a node it will search. The maximum level that it will search is 4. Thus it will operate in __O(n)__ for sparse graphs but it will operate in __O(n^2)__ for dense graphs where users make transactions with a lot of other users.
+
+## run programs
+
+__Digital Wallet__ is run using the __run.sh__ Bash script:
+
+    ./run.sh
+
+The results will be available in the __paymo_output__ directory
+
+## tests
