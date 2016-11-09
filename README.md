@@ -28,3 +28,7 @@ For each feature, we can then use the breadth first search algorithm and specify
 Since I implemented the social network graph using an adjacency list, there was no use for edges. However, edges in the graph are useful to represent each transaction. Even though the 'friend' relationship in the graph is undirected, the transactions are directed from one user to another. Thus, I created a `Edge` class to represent a transaction and stored all the transactions in the `Graph` class as a dictionary with a tuple of the source and destination node as the keys Ex: `(src_node,des_node)` and a list of `Edge` elements as the values representing transactions
 
 I also implemented some functions in the `Graph` class that mimics functionality from Venmo such as find transactions between two users, find outgoing transactions, and find incoming transactions
+
+##running digital wallet
+
+I use a python dict to implement the adjacency list where the key is a `Node` and the value is a `Set` of nodes. So the neighbors for a node can be access in time proportional to the degree of the node or __O(n)__ where __n__ is # of neighbors. The space complexity of the adjacency list is also __O(n)__. My implementation of the breadth first search limits how many degrees from a node it will search. The maximum level that it will search is 4. Thus it will operate in __O(n)__ for sparse graphs but it will operate in __O(n^2)__ for dense graphs where users make transactions with a lot of other users.

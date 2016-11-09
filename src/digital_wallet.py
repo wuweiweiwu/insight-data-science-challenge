@@ -63,10 +63,12 @@ class DigitalWallet:
                     self.write_to_file(output_1,"trusted")
                 else:
                     self.write_to_file(output_1,"unverified")
+
                 if is_level_2:
                     self.write_to_file(output_2,"trusted")
                 else:
                     self.write_to_file(output_2,"unverified")
+                    
                 if is_level_4:
                     self.write_to_file(output_3,"trusted")
                 else:
