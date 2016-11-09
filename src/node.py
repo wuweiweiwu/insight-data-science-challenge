@@ -1,5 +1,3 @@
-import collections
-
 class Node(object):
 
     def __init__(self, id):
