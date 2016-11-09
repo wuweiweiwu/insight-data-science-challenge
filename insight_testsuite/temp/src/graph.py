@@ -52,12 +52,10 @@ class Graph:
         queue = [start]
         while queue:
             current = queue.pop(0)
-            if level_dict[current]["level"] > level:
-                return None
             if current == end:
                 return level_dict[current]["level"]
             for node in self.adjacency_list[current]:
-                if node not in level_dict:
+                if node not in level_dict and level_dict[current]["level"] < level:
                     level_dict[node] = {"level":level_dict[current]["level"]+1}
                     queue.append(node)
         return None
