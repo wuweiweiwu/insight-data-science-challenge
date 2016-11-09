@@ -43,7 +43,7 @@ The results will be available in the __paymo_output__ directory
 
 ## tests
 
-Tests are in the __tests__ directory. To run them:
+Tests are in the __insight_testsuite__ directory. To run them:
 
-    cd tests
-    ./run_test.sh
+    cd insight_testsuite
+    ./run_tests.sh
